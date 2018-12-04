@@ -1,0 +1,81 @@
+技术类博客搭建
+
+框架：hexo-->博客搭建
+工具-->代码相关的工具，压缩的、大量的。集成的代码包
+指令：使用框架的具体代码行，代码段
+
+
+hexo：
+博客：技术相关
+
+git：代码托管工具--->全球通用
+(svn)
+
+代码托管工具：本地计算机--->大型数据仓库
+--->远程数据仓库：云（网易云、阿里云、新浪云、亚马逊）
+国内技术论坛：码云、简书、csdn、掘金、w3c（适合现阶段）、segmentfault.....
+github.com：全球最大的开源社区
+
+注册邮箱：
+
+www.github.com
+html css javascript node angular react mysql php echarts css3
+
+git.exe 客户端网址：https://git-scm.com/
+c://用户/.ssh 删除
+对本台电脑授权使用github账号：
+ssh-keygen -t rsa -C "自己的邮箱@xxx.com"
+a
+github.com 个人中心--->
+settings-->ssh and gpg keys--->
+ctrl +v粘贴
+
+git config --global user.name "github的用户名"
+git config --global user.email "邮箱地址"
+ssh -T git@github.com
+
+git基础操作：
+git init 初始化一个git仓库
+echo "xxxx">>1.txt 输出文字到1.txt
+touch 2.txt 创建2.txt文档
+cat xxx 读取文档内容
+
+ls：显示当前文件夹下有哪些文件
+
+提交本地仓库到远程新仓库
+①初次提交git init  #初始化一个本地仓库 生成.git的文件
+echo"111">>1.txt #输出文字到1.txt
+git add 1.txt #添加1.txt
+git commit -m"提交注释" #将文件提交到缓存区并加注释
+git remote add origin git@github.comxxxx #远程地址
+git push -u origin master #推动到远程端
+
+②以后提交：
+git add 2.txt
+git commit -m "提交2.txt"
+git push
+
+cd ..  :返回上一级文件夹
+cd xxx进入xxx文件夹
+
+③拉取远程仓库
+cd.. 返回上一级 / cd 新的文件夹下 （不能有.git隐藏文件夹）
+git clone xxxx #(远程仓库地址)
+
+分支工作流程：
+新建分支并切换到分支上工作
+git checkout -b branch01
+git add 5.txt
+git commit -m "分支提交"
+git push --set-upstream origin branch01
+
+
+切回主分支
+git checkout master
+查看已存在的分支
+git branch
+。
+
+
+
+
